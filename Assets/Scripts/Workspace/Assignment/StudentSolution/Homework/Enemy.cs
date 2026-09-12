@@ -7,13 +7,14 @@ namespace Assignment.StudentSolution
         public int damage;
         protected int aiLevel;
 
-        public virtual void Attack(Entity target) 
-        { 
-        
-        }
-        protected virtual void Patrol() 
+        public virtual void Attack(Entity target)
         {
-        
+            Debug.Log(name + " attacks " + target.name);
+        }
+
+        protected virtual void Patrol()
+        {
+            Debug.Log(name + " is patrolling.");
         }
     }
 }
